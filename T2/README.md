@@ -1,19 +1,20 @@
 # Tarea 2: Sistemas en Tiempo Real con FreeRTOS 
 **Autor:** Vicente Ramón Andrade Ercilla
 
-Este repositorio contiene los proyectos correspondientes a cada pregunta de la tarea 2. También contiene los scripts Python requeridos.
+Este repositorio contiene los proyectos correspondientes a cada pregunta de la tarea 2. También contiene los scripts Python y los archivos de datos requeridos.
 
 El directorio se divide funcionalmente según las dos preguntas de la evaluación:
 
 * **`T2IPD439/`**: Proyecto correspondiente a la **Pregunta 1**. Contiene la implementación de tareas periódicas, manejo de prioridades y el análisis de starvation inducido por cargas computacionales de complejidad algorítmica $O(n)$.
 * **`T2_2IPD439/`**: Proyecto correspondiente a la **Pregunta 2**. Contiene la implementación de los Subsistemas A (Procesamiento UART y colas) y B (Adquisición ADC periódica y actuación GPIO one-hot).
-* **`Scripts/`**: Directorio con las herramientas en Python empleadas para la validación y análisis estadístico.
+* **`Scripts/`**: Directorio con las herramientas en Python empleadas para la validación y análisis estadístico. Se incluyen también los archivos de datos en bruto (`.csv`) exportados desde el analizador lógico.
 
 ## Mapeo de Scripts de Python
 
 Cada archivo `.py` fue diseñado para interactuar con un proyecto específico y procesar los datos resultantes:
 
 ### Para el Proyecto 1 (`T2IPD439`):
+*(Nota: Los archivos `.csv` utilizados como fuente de datos para estos scripts se encuentran incluidos en esta misma carpeta).*
 
 * `analisis_rtos.py`: Identifica las transiciones lógicas en la data cruda (`digital.csv`) y calcula el periodo promedio y la desviación estándar de la temporización original.
 
