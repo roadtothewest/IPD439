@@ -1,0 +1,13 @@
+# Build de STM32CubeIDE / C
+Debug/
+Release/
+*.o
+*.elf
+*.bin
+*.map
+.metadata/
+*.launch
+
+# Caché de Python
+__pycache__/
+*.py[cod]
